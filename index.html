@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Success Pharmaceuticals — demonstration pharmaceutical portal for patients, healthcare professionals, and partners.">
+  <meta name="theme-color" content="#071a2b">
+  <title>Success Pharmaceuticals — Portal</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Safety notice -->
+  <div class="safety-bar">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <p><strong>Medication safety notice:</strong> suspected adverse events can be reported to our pharmacovigilance
+        team 24/7.</p>
+      <a href="#contact">Report an adverse event</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Success Pharmaceuticals — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+            <path d="M12 4v16M4 12h16" />
+          </svg>
+        </span>
+        <span class="brand-text">Success<span>Pharmaceuticals</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#products">Products</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#science">Science</a>
+        <a href="#quality">Quality</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <form class="header-search" id="header-search" role="search">
+          <label class="sr-only" for="header-q">Search medicines</label>
+          <input id="header-q" type="search" placeholder="Search medicines…" autocomplete="on">
+          <button type="submit" aria-label="Search products">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+              aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.2-3.2" />
+            </svg>
+          </button>
+        </form>
+        <a class="btn btn--primary btn--sm header-cta" href="#contact">HCP access</a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav"
+          aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow--light">Global biopharmaceutical company ·FCT Abuja, Nigeria</p>
+          <h1>Medicine that moves <span>people forward.</span></h1>
+          <p class="lead">We discover, develop and deliver medicines in cardiovascular disease, oncology, immunology and
+            neuroscience — built on rigorous science and a relentless commitment to patient safety.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn--primary btn--lg">Explore portfolio</a>
+            <a href="#pipeline" class="btn btn--ghost btn--lg">View pipeline</a>
+          </div>
+          <ul class="hero-meta">
+            <li>WHO-GMP certified manufacturing</li>
+            <li>FDA &amp; EMA inspected sites</li>
+            <li>Therapies in 30+ countries</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg class="molecule" viewBox="0 0 420 420" fill="none">
+            <defs>
+              <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#5eead4" />
+                <stop offset="1" stop-color="#22d3ee" />
+              </linearGradient>
+            </defs>
+            <circle class="ring" cx="210" cy="190" r="152" stroke="rgba(94,234,212,.28)" stroke-width="1.5"
+              stroke-dasharray="4 10" />
+            <g stroke="url(#mg)" stroke-width="1.8" opacity=".65">
+              <path d="M210 80 305 135v110L210 300l-95-55V135Z" />
+              <path d="M210 190V80M210 190l95 55M210 190l-95 55" />
+              <path d="m305 135 65-30M115 135 50 105M210 300v60M305 245l65 30M115 245l-65 30" />
+            </g>
+            <g stroke="url(#mg)" stroke-width="2.4">
+              <circle cx="210" cy="80" r="10" fill="#0b2a45" />
+              <circle cx="305" cy="135" r="10" fill="#0b2a45" />
+              <circle cx="305" cy="245" r="10" fill="#0b2a45" />
+              <circle cx="210" cy="300" r="10" fill="#0b2a45" />
+              <circle cx="115" cy="245" r="10" fill="#0b2a45" />
+              <circle cx="115" cy="135" r="10" fill="#0b2a45" />
+              <circle cx="370" cy="105" r="6" fill="#0b2a45" />
+              <circle cx="50" cy="105" r="6" fill="#0b2a45" />
+              <circle cx="210" cy="360" r="6" fill="#0b2a45" />
+              <circle cx="370" cy="275" r="6" fill="#0b2a45" />
+              <circle cx="50" cy="275" r="6" fill="#0b2a45" />
+            </g>
+            <circle cx="210" cy="190" r="14" fill="#14b8a6" />
+            <circle cx="210" cy="190" r="24" stroke="rgba(20,184,166,.35)" stroke-width="1.5" />
+          </svg>
+          <span class="float-chip float-chip--a">NX-501 · Phase III</span>
+          <span class="float-chip float-chip--b">3 approved therapies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Company facts">
+      <div class="wrap">
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat__num"><span class="num" data-count="30" data-suffix="+">0</span></span>
+            <span class="stat__label">Countries served</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span class="num" data-count="14" data-suffix="">0</span></span>
+            <span class="stat__label">Pipeline programs</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span class="num" data-count="3" data-suffix="">0</span></span>
+            <span class="stat__label">Approved therapies</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num"><span class="num" data-count="1200" data-suffix="+">0</span></span>
+            <span class="stat__label">Employees worldwide</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Therapeutic areas -->
+    <section class="section" aria-labelledby="areas-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Therapeutic areas</p>
+          <h2 id="areas-title">Where we focus</h2>
+          <p class="lead">Focused R&amp;D in areas of high unmet need, supported by biomarker-driven science and global
+            clinical networks. Select an area to filter the portfolio.</p>
+        </div>
+        <div class="areas-grid">
+          <button class="area-card reveal" type="button" data-area="Cardiovascular">
+            <span class="area-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+              </svg></span>
+            <span class="area-card__title">Cardiovascular</span>
+            <span class="area-card__text">Lipid disorders and atherosclerotic disease, from primary prevention to
+              post-event care.</span>
+            <span class="area-card__link">View portfolio →</span>
+          </button>
+          <button class="area-card reveal" type="button" data-area="Oncology">
+            <span class="area-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round">
+                <circle cx="12" cy="12" r="8" />
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 4v3M12 17v3M4 12h3M17 12h3" />
+              </svg></span>
+            <span class="area-card__title">Oncology</span>
+            <span class="area-card__text">Targeted therapies for solid tumours, developed through biomarker-enriched
+              trials.</span>
+            <span class="area-card__link">View portfolio →</span>
+          </button>
+          <button class="area-card reveal" type="button" data-area="Neuroscience">
+            <span class="area-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg></span>
+            <span class="area-card__title">Neuroscience</span>
+            <span class="area-card__text">Seizure disorders and neuroinflammation, with a focus on difficult-to-treat
+              populations.</span>
+            <span class="area-card__link">View portfolio →</span>
+          </button>
+          <button class="area-card reveal" type="button" data-area="Immunology">
+            <span class="area-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+              </svg></span>
+            <span class="area-card__title">Immunology</span>
+            <span class="area-card__text">Vaccines and biologics for infection prevention and immune-mediated
+              disease.</span>
+            <span class="area-card__link">View portfolio →</span>
+          </button>
+          <button class="area-card reveal" type="button" data-area="Respiratory">
+            <span class="area-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2" />
+                <path d="M9.6 4.6A2 2 0 1 1 11 8H2" />
+                <path d="M12.6 19.4A2 2 0 1 0 14 16H2" />
+              </svg></span>
+            <span class="area-card__title">Respiratory</span>
+            <span class="area-card__text">Inhaled therapies for COPD and severe asthma, with device-based
+              delivery.</span>
+            <span class="area-card__link">View portfolio →</span>
+          </button>
+          <button class="area-card reveal" type="button" data-area="Diabetes">
+            <span class="area-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.7 6.4 8.3a8 8 0 1 0 11.2 0z" />
+              </svg></span>
+            <span class="area-card__title">Diabetes</span>
+            <span class="area-card__text">Oral and injectable options for type 2 diabetes, with cardiorenal outcomes in
+              mind.</span>
+            <span class="area-card__link">View portfolio →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section section--alt" id="products" aria-labelledby="products-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="products-title">Our medicines</h2>
+          <p class="lead">Explore the marketed portfolio. Prescribing information is intended for qualified healthcare
+            professionals and is illustrative only.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.2-3.2" />
+            </svg>
+            <label class="sr-only" for="product-search">Search by brand, molecule, or indication</label>
+            <input id="product-search" type="search" placeholder="Search by brand, molecule, or indication…"
+              autocomplete="on">
+          </div>
+
+          <div class="segmented" role="group" aria-label="Filter by prescription status">
+            <button class="chip is-active" type="button" data-type="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-type="Rx" aria-pressed="false">Prescription</button>
+            <button class="chip" type="button" data-type="OTC" aria-pressed="false">OTC</button>
+            <button class="chip" type="button" data-type="Vaccine" aria-pressed="false">Vaccines</button>
+          </div>
+
+          <div class="select-field">
+            <label class="sr-only" for="area-filter">Therapeutic area</label>
+            <select id="area-filter">
+              <option value="all">All therapeutic areas</option>
+              <option>Cardiovascular</option>
+              <option>Oncology</option>
+              <option>Neuroscience</option>
+              <option>Immunology</option>
+              <option>Respiratory</option>
+              <option>Diabetes</option>
+              <option>Pain management</option>
+              <option>Allergy</option>
+              <option>Gastroenterology</option>
+            </select>
+          </div>
+
+          <button class="btn btn--outline btn--sm" id="reset-filters" type="button">Reset</button>
+        </div>
+
+        <p class="results-meta" aria-live="polite"><span id="result-count">Loading products…</span></p>
+
+        <div class="product-grid" id="product-grid"></div>
+
+        <div class="empty" id="empty-state" hidden>
+          <h3>No products match those filters.</h3>
+          <p>Try a broader search or reset the filters to see the full portfolio.</p>
+          <button class="btn btn--primary" type="button" id="empty-reset">Reset filters</button>
+        </div>
+
+        <p class="fineprint">All products, molecules, and data on this page are fictional and created for demonstration
+          purposes only. Nothing here constitutes medical advice. Always refer to the approved prescribing information
+          in your country.</p>
+      </div>
+    </section>
+
+    <!-- Pipeline -->
+    <section class="section" id="pipeline" aria-labelledby="pipeline-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Pipeline</p>
+          <h2 id="pipeline-title">Clinical development, transparently</h2>
+          <p class="lead">Our programs advance through rigorous, regulator-aligned development. Milestones are
+            indicative and subject to change based on data and regulatory review.</p>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="pipeline-table">
+            <caption class="sr-only">Nexora clinical pipeline as of the fourth quarter of 2026</caption>
+            <thead>
+              <tr>
+                <th scope="col">Program</th>
+                <th scope="col">Therapeutic area</th>
+                <th scope="col">Modality</th>
+                <th scope="col">Phase</th>
+                <th scope="col">Progress</th>
+                <th scope="col">Next milestone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>NX-501 Rofecandib</strong><span class="cell-sub">Solid tumours</span></td>
+                <td>Oncology</td>
+                <td>Monoclonal antibody</td>
+                <td><span class="phase phase--3">Phase III</span></td>
+                <td>
+                  <div class="bar" aria-hidden="true"><span style="width:78%"></span></div><span class="sr-only">78
+                    percent complete</span>
+                </td>
+                <td>Topline data · Q2 2027</td>
+              </tr>
+              <tr>
+                <td><strong>NX-412 Brevaxin</strong><span class="cell-sub">Focal seizures</span></td>
+                <td>Neuroscience</td>
+                <td>Small molecule</td>
+                <td><span class="phase phase--2">Phase II</span></td>
+                <td>
+                  <div class="bar" aria-hidden="true"><span style="width:46%"></span></div><span class="sr-only">46
+                    percent complete</span>
+                </td>
+                <td>Phase IIb start · Q1 2027</td>
+              </tr>
+              <tr>
+                <td><strong>NX-330 Respolimab</strong><span class="cell-sub">Immune-mediated disease</span></td>
+                <td>Immunology</td>
+                <td>Biologic</td>
+                <td><span class="phase phase--1">Phase I</span></td>
+                <td>
+                  <div class="bar" aria-hidden="true"><span style="width:22%"></span></div><span class="sr-only">22
+                    percent complete</span>
+                </td>
+                <td>MAD data · Q4 2026</td>
+              </tr>
+              <tr>
+                <td><strong>NX-620 Cardivex XR</strong><span class="cell-sub">Extended-release formulation</span></td>
+                <td>Cardiovascular</td>
+                <td>Small molecule</td>
+                <td><span class="phase phase--filed">Filed</span></td>
+                <td>
+                  <div class="bar" aria-hidden="true"><span style="width:94%"></span></div><span class="sr-only">94
+                    percent complete</span>
+                </td>
+                <td>CHMP opinion · Q1 2027</td>
+              </tr>
+              <tr>
+                <td><strong>NX-118 Nephrostat</strong><span class="cell-sub">Chronic kidney disease</span></td>
+                <td>Renal</td>
+                <td>Peptide</td>
+                <td><span class="phase phase--preclinical">Preclinical</span></td>
+                <td>
+                  <div class="bar" aria-hidden="true"><span style="width:9%"></span></div><span class="sr-only">9
+                    percent complete</span>
+                </td>
+                <td>IND-enabling studies · Q3 2027</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pipeline-note">Phase definitions follow ICH guidance. “Filed” indicates a marketing application
+          submitted to a regulatory authority. This pipeline is illustrative and does not represent actual company
+          activity.</p>
+      </div>
+    </section>
+
+    <!-- Science -->
+    <section class="section section--tint" id="science" aria-labelledby="science-title">
+      <div class="wrap">
+        <div class="science-grid">
+          <figure class="science-panel reveal">
+            <blockquote>“The best medicine is the one that reaches the right patient, <span>safely.</span>”</blockquote>
+            <figcaption>
+              <strong>Dr. Amara Osei</strong>
+              Chief Scientific Officer (fictional)
+            </figcaption>
+            <div class="mini-stats">
+              <div><strong>240</strong><span>Scientists</span></div>
+              <div><strong>4</strong><span>Platforms</span></div>
+              <div><strong>18</strong><span>Collaborations</span></div>
+            </div>
+          </figure>
+
+          <div class="reveal">
+            <div class="section-head" style="margin-bottom:0">
+              <p class="eyebrow">Science &amp; innovation</p>
+              <h2 id="science-title">From target to therapy, with rigour at every step.</h2>
+              <p class="lead">Discovery at Nexora is built around translational science: the earlier we ask the right
+                questions, the better the medicine we can deliver.</p>
+            </div>
+            <ul class="science-list">
+              <li>
+                <span class="mark" aria-hidden="true">01</span>
+                <div>
+                  <h3>Translational research</h3>
+                  <p>Human-relevant models and biomarker strategy embedded from day one.</p>
+                </div>
+              </li>
+              <li>
+                <span class="mark" aria-hidden="true">02</span>
+                <div>
+                  <h3>Clinical development</h3>
+                  <p>Six active assets across Phases I–III, run in 11 countries with academic partners.</p>
+                </div>
+              </li>
+              <li>
+                <span class="mark" aria-hidden="true">03</span>
+                <div>
+                  <h3>Real-world evidence</h3>
+                  <p>Continuous safety and effectiveness monitoring after approval.</p>
+                </div>
+              </li>
+              <li>
+                <span class="mark" aria-hidden="true">04</span>
+                <div>
+                  <h3>Global partnerships</h3>
+                  <p>Collaborations that accelerate access in underserved regions.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality -->
+    <section class="section" id="quality" aria-labelledby="quality-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Quality &amp; safety</p>
+          <h2 id="quality-title">Every batch. Every patient.</h2>
+          <p class="lead">Quality is designed into our processes — from raw material qualification to post-market
+            surveillance — and verified independently.</p>
+        </div>
+
+        <div class="quality-grid">
+          <article class="quality-card reveal">
+            <h3>Manufacturing excellence</h3>
+            <p>Six WHO-GMP-certified sites with full serialisation and continuous process verification.</p>
+            <ul class="check-list">
+              <li>99.7% first-time batch release</li>
+              <li>No critical deviations recorded in 2025</li>
+              <li>Annual FDA &amp; EMA inspection programme</li>
+            </ul>
+          </article>
+          <article class="quality-card reveal">
+            <h3>Pharmacovigilance</h3>
+            <p>24/7 global safety surveillance, signal detection, and regulatory reporting to ICH E2B standards.</p>
+            <ul class="check-list">
+              <li>Dedicated safety desk for healthcare professionals</li>
+              <li>Aggregate reports within regulatory timelines</li>
+              <li>Patient support and reporting assistance</li>
+            </ul>
+          </article>
+          <article class="quality-card reveal">
+            <h3>Responsible supply</h3>
+            <p>Temperature-controlled distribution and anti-counterfeiting controls across the supply chain.</p>
+            <ul class="check-list">
+              <li>2–8 °C cold chain with real-time monitoring</li>
+              <li>Unique serialisation on every pack</li>
+              <li>Secure returns and recall readiness</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="quote-banner reveal">
+          <p>“Patient safety is not a department. It is a discipline.”</p>
+          <cite>Chief Medical Officer · Success Pharmaceuticals (fictional)</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--dark" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <div class="section-head" style="margin-bottom:0">
+            <p class="eyebrow eyebrow--light">Contact</p>
+            <h2 id="contact-title">Medical information &amp; support</h2>
+            <p class="lead">Our medical information team supports healthcare professionals and patients with
+              evidence-based answers, adverse event reporting, and product documentation.</p>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18v12H3z" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg></span>
+              <div>
+                <h3>Medical information</h3>
+                <p><a href="mailto:medical.info@success.example">medical.info@success.example</a><br>Mon–Sun,
+                  08:00am–18:00pm</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3 4 7v5c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V7z" />
+                  <path d="M12 8v4M12 15h.01" />
+                </svg></span>
+              <div>
+                <h3>Pharmacovigilance · 24/7</h3>
+                <p><a href="mailto:pv@success.example">pv@success.example</a><br> 07040616239 (demo)</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 5h18v14H3z" />
+                  <path d="m3 6 9 6 9-6" />
+                </svg></span>
+              <div>
+                <h3>Media &amp; partnerships</h3>
+                <p><a href="mailto:press@success.example">press@success.example</a><br>Press releases and collaboration
+                  enquiries</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg></span>
+              <div>
+                <h3>Headquarters</h3>
+                <p>Industriestrasse 12, 4410 Basel, Nigeria<br><em>Fictional address</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <h3>Send a request</h3>
+          <p>For healthcare professionals, patients, and partners. Fields marked * are required.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="cf-name">Full name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Work email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="cf-role">I am a</label>
+                <select id="cf-role" name="role" required>
+                  <option value="">Select…</option>
+                  <option>Physician</option>
+                  <option>Pharmacist</option>
+                  <option>Nurse</option>
+                  <option>Researcher</option>
+                  <option>Patient or caregiver</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cf-country">Country</label>
+                <select id="cf-country" name="country">
+                  <option value="">Select…</option>
+                  <option>Switzerland</option>
+                  <option>Germany</option>
+                  <option>France</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option> Nigeria</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="cf-topic">Request type</label>
+                <select id="cf-topic" name="topic">
+                  <option>Medical information</option>
+                  <option>Adverse event report</option>
+                  <option>Product documentation</option>
+                  <option>Partnership enquiry</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="cf-message">How can we help? *</label>
+                <textarea id="cf-message" name="message" placeholder="Please describe your question or report…"
+                  required></textarea>
+              </div>
+              <div class="field field--full">
+                <label class="consent" for="cf-consent">
+                  <input id="cf-consent" name="consent" type="checkbox" required>
+                  <span>I agree that Success may contact me about this request and have read the privacy notice.
+                    *</span>
+                </label>
+              </div>
+            </div>
+            <button class="btn btn--primary" type="submit">Send request</button>
+            <p class="form-note">Demo form — no data is transmitted or stored.</p>
+          </form>
+
+          <div class="contact-success" id="contact-success" role="status" tabindex="-1" hidden></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Success Pharmaceuticals — home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M12 4v16M4 12h16" />
+              </svg>
+            </span>
+            <span class="brand-text">Success<span>Pharmaceuticals</span></span>
+          </a>
+          <p>A demonstration pharmaceutical portal built for design and product exploration. No real medicines are sold,
+            prescribed, or shipped.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#products">Portfolio</a></li>
+            <li><a href="#products">Prescription</a></li>
+            <li><a href="#products">Over-the-counter</a></li>
+            <li><a href="#products">Vaccines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#science">Science</a></li>
+            <li><a href="#pipeline">Pipeline</a></li>
+            <li><a href="#quality">Quality &amp; safety</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#contact">Medical information</a></li>
+            <li><a href="#contact">Safety reporting</a></li>
+            <li><a href="#pipeline">Clinical trials</a></li>
+            <li><a href="#contact">Media enquiries</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Success Pharmaceuticals (demo). All rights reserved.</span>
+        <span>Privacy · Terms · Accessibility</span>
+      </div>
+      <p class="footer-disclaimer">This site is a fictional demonstration created for design purposes. All product
+        names, molecules, data, and contact details are invented. Nothing on this page constitutes medical advice, and
+        no medicine can be ordered or prescribed through it. In a medical emergency, contact your local emergency
+        services immediately.</p>
+    </div>
+  </footer>
+
+  <!-- Product detail dialog -->
+  <dialog class="modal" id="product-dialog" aria-labelledby="dialog-title">
+    <div class="modal__panel">
+      <div class="modal__bar">
+        <button class="modal__close" id="dialog-close" type="button" aria-label="Close dialog">×</button>
+      </div>
+      <div id="dialog-body"></div>
+    </div>
+  </dialog>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <path d="m6 15 6-6 6 6" />
+    </svg>
+  </button>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
