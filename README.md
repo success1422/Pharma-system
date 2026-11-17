@@ -1,4 +1,4 @@
-# Nexora Pharmaceuticals — Portal (demo)
+# Success Pharmaceuticals — Portal (demo)
 
 A static, multi-file pharmaceutical portal. No build step, no dependencies.
 
